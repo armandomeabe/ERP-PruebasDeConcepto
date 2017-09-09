@@ -23,16 +23,24 @@ namespace dinamica.erp.wpf
         public MainWindow()
         {
             InitializeComponent();
+
+            //this.DataContext = new List<string> { "Armando", "Leo" };
+            this.Combo1.ItemsSource = new List<string> { "Armando", "Leo" };
+            this.Title = "Beer ERP";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Combo1.Items.Add("hola");
+            this.Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(Combo1.SelectedValue?.ToString());
+            MessageBox.Show($"Hola {Combo1.SelectedValue}");
+
+            var newWindow = new Window1 { };
+            newWindow.Show();
+            this.Close();
         }
     }
 }

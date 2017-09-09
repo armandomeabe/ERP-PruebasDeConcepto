@@ -5,9 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dinamica.erp.wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="335.911" Width="370.021">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="432,289,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="352,289,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Aceptar" Margin="0,0,10,10" Click="Button_Click_1" HorizontalAlignment="Right" Width="75" Height="20" VerticalAlignment="Bottom"/>
+        <Button Content="Cancelar" Margin="0,0,90,10" Click="Button_Click" HorizontalAlignment="Right" Width="75" Height="20" VerticalAlignment="Bottom"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="10,174,0,0" VerticalAlignment="Top"/>
+        <Image Stretch="Fill" Source="Content/cropped-beer_header.jpg" Height="110" VerticalAlignment="Top"/>
+        <TextBox Height="23" Margin="10,205,10,0" TextWrapping="Wrap" VerticalAlignment="Top" AutomationProperties.IsRequiredForForm="True"/>
+        <ComboBox Name="Combo1" Margin="10,146,10,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
